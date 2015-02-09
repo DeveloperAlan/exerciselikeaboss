@@ -9,7 +9,7 @@ var App = App || {};
 
     initialize: function() {
       App.rootView = new App.AppView();
-      $("#app-container").html(App.rootView.render().el);
+      $(".jumbotron").html(App.rootView.render().el);
     },
 
     welcome: function() {
