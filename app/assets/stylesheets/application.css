@@ -26,11 +26,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  width
   overflow-x: hidden;
-
   color: #4c4c4c;
 }
+
 a,
 a:focus {
   transition: .2s;
