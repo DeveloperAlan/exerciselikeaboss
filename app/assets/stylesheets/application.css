@@ -12,12 +12,11 @@
 *************************************************************/
 
 /* Bootstrap minified css */
-@import'bootstrap.css';
+@import'//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css';
 
 /* Font Awesome minified css */
-@import'fonts-css/font-awesome.min.css';
+@import'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css';
 
-@import'typography.css';
 
 
 /** Scaffolding

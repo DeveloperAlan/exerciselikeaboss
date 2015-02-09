@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg'
 gem 'devise'
 gem 'handlebars_assets'
+gem 'google-api-client'
 
 group :development, :test do
   gem 'byebug'
