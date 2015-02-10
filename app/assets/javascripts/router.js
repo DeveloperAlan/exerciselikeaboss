@@ -4,7 +4,7 @@ var App = App || {};
   App.Router = Backbone.Router.extend({
     routes: {
       '' : 'welcome',
-      'exercise': 'exercise'
+      'exercises': 'exercises'
     },
 
     initialize: function() {
