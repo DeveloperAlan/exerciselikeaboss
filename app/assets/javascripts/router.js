@@ -4,7 +4,7 @@ var App = App || {};
   App.Router = Backbone.Router.extend({
     routes: {
       '' : 'welcome',
-
+      'exercise': 'exercise'
     },
 
     initialize: function() {
@@ -14,6 +14,12 @@ var App = App || {};
 
     welcome: function() {
       App.rootView.display(App.welcomeView)
+    },
+
+    exercise: function() {
+      App.exerciseCollection.fetch().then(function() {
+        App.rootView.display(App.ExerciseView);
+      });
     }
 
     // challenges: function() {
@@ -22,4 +28,5 @@ var App = App || {};
     //   });
     // }
   });
+  App.router = new App.Router();
 })(App);
