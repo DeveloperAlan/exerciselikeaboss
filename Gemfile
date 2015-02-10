@@ -12,6 +12,7 @@ gem 'pg'
 gem 'devise'
 gem 'handlebars_assets'
 gem 'google-api-client'
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'
