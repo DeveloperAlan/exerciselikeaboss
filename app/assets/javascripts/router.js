@@ -16,7 +16,7 @@ var App = App || {};
       App.rootView.display(App.welcomeView)
     },
 
-    exercise: function() {
+    exercises: function() {
       App.exerciseCollection.fetch().then(function() {
         App.rootView.display(App.ExerciseView);
       });

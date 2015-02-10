@@ -1,4 +1,4 @@
-var App = App || {}
+var App = App || {};
 
 (function(App){
   App.Exercises = Backbone.Collection.extend({

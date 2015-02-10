@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+
   devise_for :users
-  root 'welcome#index'
+  root 'home#index'
+
+  get 'welcome/index' => 'welcome'
 
   scope '/api' do
     resources :exercises
