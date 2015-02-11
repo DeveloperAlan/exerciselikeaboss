@@ -4,7 +4,9 @@ var App = App || {};
   App.welcomeView = Backbone.View.extend({
 
     initialize: function() {
-      this.render;
+      App.exerciseCollection.on('add', this.render, this);
+      App.exerciseProgramCollection.on('add', this.render, this);
+      App.exerciseCategoryCollection.on('add', this.render, this);
     },
 
     render: function() {
