@@ -21,8 +21,17 @@ var App = App || {};
       });
     },
 
+    isSignedIn: function() { 
+        return $('body').data('user-signed-in') === true;
+    }, 
+
+
     welcome: function() {
-      App.rootView.display(App.welcomeView)
+      if (this.isSignedIn() === true) {
+        App.rootView.display(App.welcomeView)
+      } else {
+        App.rootView.display(App.defaultView)
+      }
     },
 
     exercises: function() {
