@@ -4,7 +4,6 @@ var App = App || {};
   App.ExerciseView = Backbone.View.extend({
 
     initialize: function() {
-      console.log('hi');
       App.exerciseCollection.on('add', this.render, this);
     },
 

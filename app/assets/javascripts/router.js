@@ -10,6 +10,11 @@ var App = App || {};
     initialize: function() {
       App.rootView = new App.AppView();
       $(".jumbotron").html(App.rootView.render().el);
+
+        $("nav a:not([data-backbone-navigation='false'])").on("click", function(event) {
+        event.preventDefault();
+        App.router.navigate($(this).attr("href"), { trigger: true });
+      });
     },
 
     welcome: function() {
