@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'home#index'
-
-  get 'welcome/index' => 'welcome'
+  root 'welcome#index'
 
   scope '/api' do
     resources :exercises
+    resources :exercise_programs
+    resources :exercise_categories
   end
 
   get '*anything', to: "welcome#index"

@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  exercise_id: 1
   name: MyString
-  estimated_time: 
-  exercise_id: 
-  user_id: 
-  user_id: 1
-  number_of_times_of_completion: 1
+  difficulty: 1
+  description: MyText
+  estimated_time: 1
+  number_of_completions: 1
 
 two:
+  exercise_id: 1
   name: MyString
-  estimated_time: 
-  exercise_id: 
-  user_id: 
-  user_id: 1
-  number_of_times_of_completion: 1
+  difficulty: 1
+  description: MyText
+  estimated_time: 1
+  number_of_completions: 1
