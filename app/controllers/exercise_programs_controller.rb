@@ -1,5 +1,6 @@
 class ExerciseProgramsController < ApplicationController
   before_action :find_exercise_program, only: [:destroy, :update]
+  before_action :authenticate_user!
   def index
     @exercise_programs = ExerciseProgram.all
     render json: @exercise_programs

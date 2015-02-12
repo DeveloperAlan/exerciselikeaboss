@@ -1,4 +1,4 @@
-<h2>Exercises</h2>
+<h2>Featured Exercises</h2>
 
 <table>
   <tr>
@@ -11,6 +11,23 @@
     <td>{{name}}</td>
     <td>{{intensity}}</td>
     <td>{{time}}</td>
+  </tr> 
+  {{/each}}
+</table>
+
+<h2>Featured Exercise Programs</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Difficulty</th>
+    <th>Description</th>
+  </tr>
+  {{#each exercise_programs}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{difficulty}}</td>
+    <td>{{description}}</td>
   </tr> 
   {{/each}}
 </table>

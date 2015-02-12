@@ -1,4 +1,6 @@
 class ExerciseCategoriesController < ApplicationController
+before_action :authenticate_user!
+before_action :find_exercise_category, only: [:update, :destroy]
   def index 
     @exercise_categories = ExerciseCategory.all
     render json: @exercise_categories
